@@ -143,10 +143,11 @@ Seriously, yes, for anything that crosses your mind. This is early-stage, I'll c
 - This project is now also released for the most part under the [MIT License](https://github.com/c4ffein/realworld-django-ninja/blob/master/LICENSE) by [c4ffein](https://github.com/c4ffein/).
 
 
-C:\Users\cioin\source\repos\python\realworld-django>uv sync
+C:\Users\cioin\source\repos\python\realworld-python-django>uv sync
+Using CPython 3.14.10 interpreter at: C:\Python314\python.exe
+Creating virtual environment at: .venv
 Resolved 99 packages in 1ms
-      Built python-build-standalone @ file:///C:/Users/cioin/source/repos/python/realworld-django                       Prepared 12 packages in 17.98s
-Installed 76 packages in 10.48s
+Installed 76 packages in 10.66s
  + annotated-types==0.8.0
  + antlr4-python3-runtime==4.13.2
  + asgiref==3.13.0
@@ -201,7 +202,7 @@ Installed 76 packages in 10.48s
  + pydantic-settings==2.16.2
  + pyjwt==2.15.1
  + pyparsing==3.3.3
- + python-build-standalone==0.1.0 (from file:///C:/Users/cioin/source/repos/python/realworld-django)
+ + python-build-standalone==0.1.0 (from file:///C:/Users/cioin/source/repos/python/realworld-python-django)
  + python-dateutil==2.9.0.post0
  + python-dotenv==1.2.4
  + pywin32==312
@@ -224,4 +225,20 @@ Installed 76 packages in 10.48s
  + wrapt==2.5.2
  + xmltodict==1.0.4
 
-C:\Users\cioin\source\repos\python\realworld-django>pythonbuild
+C:\Users\cioin\source\repos\python\realworld-python-django>uv run python manage.py runserver 0.0.0.0:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 30 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): accounts, admin, articles, auth, comments, contenttypes, jwt_ninja, sessions.
+Run 'python manage.py migrate' to apply them.
+November 02, 2026 - 12:34:02
+Django version 6.1.2, using settings 'config.settings'
+Starting WSGI development server at http://0.0.0.0:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+
+C:\Users\cioin\source\repos\python\realworld-python-django>
